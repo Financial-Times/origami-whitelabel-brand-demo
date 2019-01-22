@@ -1,0 +1,22 @@
+{
+  "name": "whitelabel-typography",
+  "authors": [
+    "notlee <lee.moody@ft.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "o-typography": "^5.8.3",
+    "o-table": "#custom-brand-support"
+  }
+}

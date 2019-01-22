@@ -1,0 +1,61 @@
+$_o-colors-test-environment: true;
+$o-brand: 'whitelabel';
+@import 'o-typography/main';
+@import 'o-table/main';
+
+// Include Roboto font-faces.
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+// Register the Roboto font.
+$roboto-family: 'Roboto', sans-serif;
+@include oFontsDefineCustomFont($roboto-family, (
+    (weight: regular, style: normal),
+    (weight: bold, style: normal),
+    (weight: semibold, style: normal)
+));
+
+// Use Roboto font in o-typography.
+@include oTypographySetFont(
+    $type: 'sans',
+    $family: $roboto-family
+);
+
+// Define a custom font scale for Roboto in o-typography.
+@include oTypographyDefineFontScale(
+    $family: $roboto-family,
+    $scale: (
+        -2: (12, (12 * 1.3)),
+        -1: (14, (14 * 1.3)),
+         0: (16, (16 * 1.3)),
+         1: (18, (18 * 1.3)),
+         2: (20, (20 * 1.3)),
+         3: (24, (24 * 1.3)),
+         4: (28, (28 * 1.3)),
+         5: (32, (32 * 1.3)),
+         6: (40, (40 * 1.3)),
+         7: (48, (48 * 1.3)),
+         8: (56, (56 * 1.3)),
+         9: (72, (72 * 1.3)),
+        10: (84, (84 * 1.3))
+));
+
+// Configure a custom table
+@include oTableCustomize((
+    table-border-color: black,
+    table-alternate-background: powderblue
+));
+
+// Output the table CSS
+@include oTable();
+
+// Include o-typography classes, which will now use Roboto.
+// Other components which use o-typography, like o-table, will also use Roboto.
+@include oTypography($opts: ('wrapper'));
+
+body {
+    background-color: oColorsGetColorFor('page', 'background');
+}
+
+.o-table-container {
+    margin-bottom: oTypographySpacingSize(5);
+}
