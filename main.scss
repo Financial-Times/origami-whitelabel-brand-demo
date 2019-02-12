@@ -20,6 +20,7 @@ $roboto-family: 'Roboto', sans-serif;
 );
 
 // Define a custom font scale for Roboto in o-typography.
+// scale: (font-size, line-height) (px value)
 @include oTypographyDefineFontScale(
     $family: $roboto-family,
     $scale: (
