@@ -1,6 +1,6 @@
 # Customised Origami Components Demo
 
-This project demonstrates how to customise whitelabel Origami components with Sass. In particular how to set a custom font, typographic scale, and headings. This project does not show how a project should be set up or built, and should not be viewed as a project boilerlate.
+This demo shows how to customise whitelabel Origami components with Sass. In particular how to set a custom font, typographic scale, and headings. This demo does not show how a project should be set up and built, and should not be viewed as a project boilerlate. It is also not a replacement for component documentation (e.g. see [o-typography in the registry](https://registry.origami.ft.com/components/o-typography/readme#customisation)).
 
 - [Demo Sass](https://github.com/Financial-Times/origami-whitelabel-brand-demo/blob/master/main.scss)
 - [Demo Markup](https://github.com/Financial-Times/origami-whitelabel-brand-demo/tree/master/public)
